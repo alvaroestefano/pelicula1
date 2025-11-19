@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="devide-width, initial-scale=1.0">
+        <title>video 1 -peruflix</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: arial, sans-serif;
+                background-color: #000;
+                color:#fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                text-align: center;
+            }
+            h1{
+                font-size: 2.8em;
+                color: #ff3c00;
+                margin-bottom: 20px;
+            }
+            video {
+                width: 80%;
+                max-width: 800px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(255,60,0,0.6);
+                margin-bottom: 25px;
+            }
+            a.boton {
+                text-decoration: none;
+                background-color: #ff3c00;
+                color:white;
+                padding: 12px 25px;
+                border-radius: 8px;
+                font-size: 1.1em;
+                transition: background 0.3s, transform 0.3s;
+            }
+            a.boton{
+                background-color: #ff3c00;
+                transform: scale(1.05);
+            }
+            @media(max-width: 600px){
+                h1{
+                    font-size: 1.6em;
+                }
+                video{
+                    width: 95%;
+                }
+             }
+        </style>
+    </head>
+    <body>
+        <h1>Pelicula 1 - las leyendas el origen</h1>
+
+        <!--reproductor de video-->
+        <video controls>
+            <source src="../video/Las Leyendas_ el origen.mp4">
+            tu navegador no sopota el video.
+
+            <!--boton de regreso-->
+            <a href="../intex.html" class="boton">
+                regresar a peruflix</a>
+    </body>
+</html>
